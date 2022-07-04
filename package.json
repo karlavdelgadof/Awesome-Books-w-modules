@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/karlavdelgadof/Awesome-Books-w-modules/issues"
   },
-  "homepage": "https://github.com/karlavdelgadof/Awesome-Books-w-modules#readme"
+  "homepage": "https://github.com/karlavdelgadof/Awesome-Books-w-modules#readme",
+  "dependencies": {
+    "luxon": "^2.4.0"
+  }
 }

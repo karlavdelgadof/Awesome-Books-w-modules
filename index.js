@@ -10,6 +10,7 @@ import Storage from './modules/localStorage.js';
 
 import UI from './modules/userInterface.js'
 // Event to Display Book
+import {DateTime} from './modules/luxon.min.js'
 
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 // Event to Add Book
@@ -77,3 +78,15 @@ document.getElementById('contact-btn').addEventListener('click', () => {
   document.getElementById('add-btn').classList.remove('active');
   document.getElementById('list-btn').classList.remove('active');
 });
+
+// Get Date API 
+
+const dateContainer = document.getElementById('date-container');
+const dateP = document.createElement('p');
+dateP.setAttribute('id', 'date');
+dateP.textContent = DateTime.now().toLocaleString(DateTime.DATETIME_MED) ;
+dateContainer.appendChild(dateP);
+
+
+
+
