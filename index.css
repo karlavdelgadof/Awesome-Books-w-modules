@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #751e38;
+  --color-secondary: #be3144;
+  --color-third: #f05941;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.626);
+  background-blend-mode: soft-light;
+  background-image: url('./multimedia/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 2px 10px rgb(39 42 50);
+}
+
+#nav-container,
+#footer-cont {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 900px;
+}
+
+#nav-container h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 36px;
+  background-image: linear-gradient(90deg, #872341, #be3144, #f05941);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#nav-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+}
+
+#list-btn,
+#add-btn,
+#contact-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#nav-links li:hover {
+  color: var(--color-third);
+}
+
+#nav-links li.active {
+  color: var(--color-third);
+}
+
+#add,
+#list,
+#contact {
+  display: none;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 600px;
+}
+
+#contact {
+  text-align: center;
+  font-size: 26px;
+  color: var(--color-secondary);
+}
+
+#contact ul {
+  text-align: left;
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+#add h2,
+#list h2,
+#contact h2 {
+  padding: 0;
+  margin: 1rem 0;
+  width: 80%;
+  text-align: center;
+  font-size: 40px;
+  color: var(--color-primary);
+}
+
+#add.show {
+  display: flex;
+}
+
+#list {
+  display: none;
+}
+
+#list.show {
+  display: flex;
+}
+
+#contact.show {
+  display: flex;
+}
+
+div#book-list {
+  width: 80%;
+  border: 2px solid #555;
+}
+
+div#book-list .book:nth-child(2n+2) {
+  background-color: #f6b48a;
+}
+
+div.book {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fefaf7;
+  font-size: 14px;
+}
+
+.book h3 + h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.remove-btn {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  margin: 0;
+  background-color: var(--color-secondary);
+  color: #eee;
+  font-size: 1.25em;
+  border-radius: 6px;
+}
+
+.remove-btn:hover {
+  background-color: var(--color-primary);
+}
+
+#book-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#book-form input {
+  width: 90%;
+  margin: 0.5em 0 0;
+  padding: 0 0.5em;
+  border: 3px solid var(--color-third);
+  font-size: 1.5em;
+  border-radius: 6px;
+}
+
+#book-form input:focus {
+  border: 3px solid var(--color-primary);
+}
+
+#book-form button {
+  width: 60px;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  margin: 1em;
+  background-color: var(--color-secondary);
+  color: #eee;
+  font-size: 1em;
+  border-radius: 6px;
+}
+
+#book-form button:hover {
+  background-color: var(--color-third);
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: #fff;
+}

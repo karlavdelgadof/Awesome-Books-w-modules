@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Favorite Books</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon-96.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="nav-container">
+            <h1>Awesome Books</h1>
+            <ul id="nav-links">
+                <li id="list-btn"><a>List</a></li>
+                <li id="add-btn" class="active"><a>Add new</a></li>
+                <li id="contact-btn"><a>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="list">
+        <h2>Awesome Books</h2>
+        <div id="book-list"></div>
+    </div>
+    <div id="add" class="show">
+        <form id="book-form">
+            <h2>Add a new Book</h2>
+            <input id="title" placeholder="Title" type="text">
+            <input id="author" placeholder="Author" type="text">
+            <button type="submit">Add</button>
+        </form>
+    </div>
+    <div id="contact">
+        <h2>Contact Information</h2>
+        <p>Do have any questions or you just want to say "Hello"? You can reach out to us!</p>
+        <ul>
+            <li>Our e-mail: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+            <li>Our phone number: 01547850354</li>
+            <li>Our address: 1200 Petronila Street 14587 Sinfore, CA</li>
+        </ul>
+    </div>
+    <footer>
+        <div id="footer-cont">
+            <h3>Copyright © 2022</h3>
+            <p>Some rights reserved</p>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
