@@ -50,6 +50,16 @@ body {
   max-width: 900px;
 }
 
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo-container span {
+  font-size: 36px;
+}
+
 #nav-container h1 {
   font-family: 'Berkshire Swash', cursive;
   font-size: 36px;
