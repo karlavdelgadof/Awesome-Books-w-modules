@@ -22,5 +22,6 @@
   },
   "devDependencies": {
     "hint": "^6.2.0"
-  }
+  },
+  "type": "module"
 }
