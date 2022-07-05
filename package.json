@@ -1,0 +1,27 @@
+{
+  "name": "awesome-books-w-modules",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlavdelgadof/Awesome-Books-w-modules.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlavdelgadof/Awesome-Books-w-modules/issues"
+  },
+  "homepage": "https://github.com/karlavdelgadof/Awesome-Books-w-modules#readme",
+  "dependencies": {
+    "luxon": "^2.4.0"
+  },
+  "devDependencies": {
+    "hint": "^6.2.0"
+  },
+  "type": "module"
+}
